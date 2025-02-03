@@ -1,0 +1,557 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* CSS Variables */
+/* Light Mode */
+:root,
+[data-theme="light"] {
+    --bs-blue: #3a8fd9;
+    --bs-baby-blue: #89cff0;
+    --bs-indigo: #6610f2;
+    --bs-purple: #686dc3;
+    --bs-pink: #e83283;
+    --bs-red: #fc346f;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #41d7a7;
+    --bs-teal: #528fb3;
+    --bs-cyan: #39cbfb;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #e83283;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --bs-blue: #1e3a5f;
+    --bs-baby-blue: #4a7c9f;
+    --bs-indigo: #3e1a8a;
+    --bs-purple: #3e3a6d;
+    --bs-pink: #8a1a4a;
+    --bs-red: #8a1a2f;
+    --bs-orange: #8a3e14;
+    --bs-yellow: #8a6a07;
+    --bs-green: #1e5f4a;
+    --bs-teal: #1e4a5f;
+    --bs-cyan: #1e5f6a;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #3e3e3e;
+    --bs-gray-dark: #1e1e1e;
+    --bs-body-bg: #212529; 
+    --bs-primary: #4d112c;
+}
+
+/* fonts */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] p {
+    color: var(--bs-black);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p {
+    color: var(--bs-white);
+}
+
+[data-theme="light"] .title-text{
+    color: var(--bs-black);
+}
+[data-theme="dark"] .title-text{
+    color: var(--bs-black);
+}
+
+[data-theme="light"] .main-title-text{
+    font-family: "Pacifico", serif;
+    color: var(--bs-primary);
+}
+[data-theme="dark"] .main-title-text{
+    font-family: "Pacifico", serif;
+    color: var(--bs-primary);
+}
+
+
+
+/* global */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, var(--bs-pink), var(--bs-green), var(--bs-purple));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar {
+    background-color: var(--bs-primary);
+    color: var(--secondary-fg);
+}
+
+.nav-item a .profile-image {
+    opacity: 1 !important; /* Ensure profile image is fully opaque */
+    transition: none !important; /* Exempt profile image from hover transition */
+}
+
+.trans-text {
+    opacity: 0.7;
+    transition: opacity 0.8s ease, transform 1s ease;
+}
+
+.trans-text:hover {
+    color: var(--bs-white);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.brand-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+h1.brand {
+    font-family: "Pacifico", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: var(--bs-white);
+}
+
+.brand-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.profile-text:hover {
+    color: var(--bs-white);
+    font-weight: bold;
+}
+
+.profile-link .profile-image {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin-right: 10px;
+    opacity: 1 !important;
+    transition: none !important;
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-white);
+    text-decoration: none;
+    background: none;
+    border: 0;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+body.menu-open .overlay {
+    display: block;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+body.menu-open .overlay {
+    display: block;
+}
+
+.toggler-container {
+    z-index: 1050;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+/* Ensure the menu itself is also fixed and does not shift content */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--bs-body-bg);
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+body.menu-open .menu {
+    transform: translateX(0);
+}
+
+
+/* buttons */
+.btn {
+    border: none;
+    outline: none;
+}
+
+.btn-log {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-log:hover {
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-white) 
+}
+
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.form-control {
+    background-color: var(--bs-white)
+}
+
+/* containers */
+.app-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.scrollable-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 15px; /* Optional: Add padding to avoid scrollbar overlap */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.profile-content-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.about-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* cards */
+.card {
+    border: none !important;
+}
+
+.card-body {
+    background-color: #fff !important;
+}
+
+.card-body .card-title,
+.card-body .card-text,
+.card-body .text-muted {
+    color: #000 !important;
+}
+
+.card-body .text-muted {
+    color: #6c757d !important;
+}
+/* index.html */
+.feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.feature-image-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 1;
+}
+
+/* footer */
+footer {
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.footer-icons {
+    position: relative;
+    z-index: 2;
+    color: --bs-black;
+    text-decoration: none;
+}
+
+.footer-icons i {
+    transition: transform 0.3s ease;
+}
+
+.footer-icons i:hover {
+    transform: scale(1.75);
+}
+
+[data-theme="dark"] .footer-icons {
+    color: var(--bs-white); 
+}
+
+/* my account */
+.profile-picture-container {
+    position: relative;
+    margin: 20%;
+}
+
+.edit-profile-picture {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-picture:hover {
+    background-color: var(--bs-gray);
+}
+
+.edit-profile-picture i {
+    font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+
+
+/* Media Style Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .brand {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .brand-icon {
+        font-size: 1.5rem;
+    }
+
+    .btn-rounded {
+        border-radius: 25px;
+    }
+
+    .profile-link .profile-image {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .brand {
+        font-size: 1.75rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .brand-icon {
+        font-size: 1.75rem;
+    }
+
+    .btn-rounded {
+        border-radius: 30px;
+    }
+
+    .profile-link .profile-image {
+        width: 17.5px;
+        height: 17.5px;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .brand {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .brand-icon {
+        font-size: 2rem;
+    }
+
+    .btn-rounded {
+        border-radius: 35px;
+    }
+
+    .profile-link .profile-image {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .brand {
+        font-size: 2.25rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .brand-icon {
+        font-size: 2.25rem;
+    }
+
+    .btn-rounded {
+        border-radius: 40px;
+    }
+
+    .profile-link .profile-image {
+        width: 22.5px;
+        height: 22.5px;
+    }
+}
+
+/* Extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .brand {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .brand-icon {
+        font-size: 2.5rem;
+    }
+
+    .btn-rounded {
+        border-radius: 50px;
+    }
+
+    .profile-link .profile-image {
+        width: 25px;
+        height: 25px;
+    }
+}

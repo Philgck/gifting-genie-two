@@ -7,6 +7,5 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
-staticfiles/
 chris-notes.txt
 chris-usefulcommands.txt
