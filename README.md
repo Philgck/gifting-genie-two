@@ -1,7 +1,7 @@
 # Gifting Genie - A Gift Giving Alert System
 Created by: Phillip Kershaw, Christopher Matthew, Geraldine Edwards and Joanna O'Connor. 
 
-<img width="612" alt="" src="readme.docs/...">
+<img width="612" alt="responsive screens landing page for the Gifting Genie app" src="readme.docs/...">
 
 
 link to Heroku (live page)
@@ -105,9 +105,9 @@ Title | User story | MoSCoW prioritisation |
 
   
 We used [GitHub Projects](https://github.com/users/Philgck/projects/13) to create a project board and populated it with user stories and added labels according to MoSCoW prioritisation.
-All of the 'must have' user stories ###### are/were not completed ~~with any other issues being carried over to the next sprint of the project development.~~
+All but one of the 'must have' user stories were completed with any other issues being carried over to the next sprint of the project development.
 
-![Project Board](readme.docs/project_board_Moscow_labels.png)
+![Project Board](readme.docs/images/project_board.png)
 
 Each user story had acceptance criteria added.The fulfillment of the criteria for each of these can be demonstrated by the presence of the features on the site (see below). The CRUD funtionality of the 'Event', 'Wish List' and 'Friends' models were tested extensively throughout each development phase both manually and through automated unit tests. 
 
@@ -150,7 +150,6 @@ Each user story had acceptance criteria added.The fulfillment of the criteria fo
 ## CREATION PROCESS
 
   ### Wireframes
-Wireframes were created using...............
 <details open>
 <summary>Landing page wireframe desktop view </summary>
 <img width="1080" alt="Landing page wireframe" src="readme.docs/images/wireframe_landing page.png">
@@ -178,32 +177,23 @@ The website uses the following fonts:
 
 ### Colour Scheme
 
-The color scheme of the website is designed to provide a clean, non-intrusive background that is easily viewed in both light and dark modes. This design choice follows a style often used by information and education sites, such as Wikipedia. The primary colors used are:
+The color scheme of the website is was taken from open source Bootswatch (https://bootswatch.com/quartz/) and we chose the Quartz theme which provides a fun and colourful background and a non-intrusive background that is easily viewed in both light and dark modes. This design was chosen as it had a fun and warm feel to associate with gift-giving occasions. 
 
-- **Black and White**: The almost black and white color scheme provides a neutral background that does not distract from the content. This ensures that the text is easily readable and the images stand out.
-- **Accent Colors**: 
-  - **Blue (#005eff)**: Used for links, buttons, and other interactive elements to draw attention without being overwhelming.
-  - **Green (#28a745)**: Used for positive actions such as the "Add Comment" button.
-  - **Yellow (#ffc107)**: Used for the "Return Home" button to provide a bright, noticeable call to action.
-  - **Red (#e0a800)**: Used for hover states to indicate interactivity.
-
-The palette was chosen using [Coolors](https://coolors.co/).
 
 ### Imagery
-- **DALL·E**: AI-generated images via Chat GPT that provide unique and creative visuals for the blog posts. 
 - **Pixabay**: Royalty-free stock images that are used to complement the content. [Pixabay](https://pixabay.com/)
 
 The 'Gifting Genie' icon is used as the icon to enhance the visual appeal and usability of the website. The same icon is included both on each page in the Navbar and as a recognisable icon as the favicon for the tab. [Procreate](https://procreate.com/)
+![favicon and icon](readme.docs/images/icon_and_favicon.png)
 
 ### Layout and Styling
 
 The website features a consistent layout and styling across all pages, ensuring a cohesive user experience. Key design elements include:
 
-- **Header**: The header contains a collapsible navbar that is consistent across all pages. It includes links to the main sections of the website, such as ~~Home, Nuclear Facilities, Nuclear Fuel & Waste, Nuclear Defence, Nuclear Power in Space, Fact or Fiction, and Educational Resources.~~ The navbar also includes login and signup links for unauthenticated users and a logout button for authenticated users.
+- **Header**: The header contains a collapsible navbar that is consistent across all pages. It includes links to the main sections of the website, pplanner, friendslist and user wishlists. The navbar also includes login and signup links for unauthenticated users and a logout button for authenticated users.
 - **Collapsible Navbar**: The navbar is designed to be responsive and collapses into a hamburger menu on smaller screens. This ensures that the navigation is accessible and user-friendly on all devices.
-- **Footer**: The footer is consistent across all pages and includes links to social media apps Facebook, X (formerly Twitter) and Instagram. It maintains the same styling as the header, providing a cohesive look and feel across all pages.
-- **Main Content Area**: The main content area is designed to be flexible and accommodate various types of content, including text, images, and interactive elements. It is styled to ensure readability and a pleasant user experience.
-    
+- **Footer**: The footer is consistent across all pages and includes links to social media apps Facebook, X (formerly Twitter), Instagram and Pintrest. The styling is cohesive across all pages to give a cohesive look and feel across all pages.
+   
  ---
 
 ## WEBSITE FEATURES 
@@ -213,7 +203,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details open>
   <summary>landing page</summary>
 
-  ![home-page](readme.docs/landing_page.png)
+  ![home-page](readme.docs/images/landing_page.png)
 
   </details>
   Users arrive directly on the landing page which outlines the purpose of the app immediately rather than requiring users to log in or register before being able to see anything in order to entice users to then sign-up in order to use the features.
@@ -224,16 +214,17 @@ The website features a consistent layout and styling across all pages, ensuring 
 <details open>
   <summary>Authentication page</summary>
 
-  ![Signup Page](readme.docs/signup_page_view.png)
-  ![login-page](readme.docs/login_page.png) 
+  ![Signup Page](readme.docs/images/signup_page_view.png)
+  ![login-page](readme.docs/images/login_feature.png) 
+  ![sign-out-page](readme.docs/images/sign_out_confirm.png.png) 
 
-  Users must be registered via the sign up page and/or login to navigate from the landing page to their user profile. The login page/sign up notice will pop up if the user is not logged in when the landing page is clicked. Incomplete fields will receive prompts. 
+  Users must be registered via the sign up page and/or login to navigate from the landing page to their user profile. The login page/sign up notice will pop up if the user is not logged in when the landing page is clicked. Incomplete fields will receive prompts. A signout confirmation is requested if a user selects to sign out. 
 
 **USER PROFILE VIEW** 
   <details open>
   <summary>User Profile Page</summary>
 
-  ![User Profile Page](readme.docs/user-profile_page_view.png)
+  ![User Profile Page](readme.docs/images/user-profile_page_view.png)
  
   </details>
   Authenticated users then access their calendar to add, view or edit events; add, view or modify wishlists, and view or modify their friends list from their own user profile. 
@@ -244,7 +235,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>Calendar of events</summary>
 
-  ![events-detail](readme.docs/events_detail_page_view.png)
+  ![events-detail](readme.docs/images/events_detail_page_view.png)
 
   </details>
   The detailed view a calendar containing user added events.
@@ -304,10 +295,9 @@ The admin panel, a feature of Django, was customized using Summernote to enhance
 The following would be options to consider including in future versions of the website:
  
   - Include a 'Search Events' feature for users to search for events using search keywords that navigates user to the event details from the search results.
-  - Include a 'Search Friends' feature where friends can be searched for by username
-  - Include a 'Share invite to Friends' feature to link authenticated users with their family and freiends
+  - Include a 'Share invite to Friends' feature to link authenticated users with their family and friends
   - Users can select items on a friend's wishlist to indicate intended purchase so that both the friend and other viewers of the wishlist can identify available items. 
-    - Requested friends can receive notifications (via a preferred method eg email or in-app) when other users edit their wishlist to indicate intention of purchase. 
+  - Requested friends can receive notifications (via a preferred method eg email or in-app) when other users edit their wishlist to indicate intention of purchase. 
   - Friends can receive notifications (via a preferred method eg email or in-app) that another friend has created a new event or wishlist. 
     
 
@@ -428,29 +418,6 @@ Navigate to Deploy tab
 
 ## TESTING
 
- ### Unit Tests ###### TO BE UPDATED FOR GIFTING GENIE _ USE SAME FORMAT ######
-
-The following automated Unit Tests were performed from test_views.py and test_forms.py:
-
-| Test Category            | Test Description                                                                 |
-|--------------------------|----------------------------------------------------------------------------------|
-| **Test Setup**           | Initializes test data, including creating a regular user, an admin user, and a sample topic. |
-| **Test Topic Detail Page** | Verifies that the topic detail page renders correctly with the topic details when accessed by an admin user. |
-|                          | Ensures that the create topic page renders correctly and uses the appropriate template. |
-|                          | Confirms that the edit topic page renders correctly and uses the appropriate template. |
-|                          | Checks that the delete topic page renders correctly and uses the appropriate template. |
-| **Test Forms**           | Ensures that the comment form is valid when provided with valid data.             |
-|                          | Verifies that the comment form is invalid when provided with empty data.          |
-|                          | Confirms that the topic form is valid when provided with valid data.              |
-|                          | Ensures that the topic form is invalid when provided with empty data.             |
-| **Test Models**          | Verifies that the string representation of the topic model returns the topic title. |
-|                          | Ensures that the string representation of the comment model returns the first 20 characters of the comment body. |
-| **Test Comment Functionality** | Verifies that a comment can be added to a topic.                              |
-|                          | Ensures that a comment can be edited.                                             |
-|                          | Confirms that a comment can be deleted.                                           |
-
-  ### HTML validation
-
 I have used the W3C Markup validator to validate all of my HTML code - [W3C Markup Validator](https://validator.w3.org/)
 
 Pages in this project are developed using DTL and all except the landing page (and login, logout and sign-up pages which are Django admin tools that I have no control over) require user authentication. The HTML validator will throw errors if I were to use the URL so I followed the below approach for the landing page and the templates:
@@ -475,26 +442,9 @@ HTML was checked and ~~had no errors or warnings to show as indicated above.~~
   [JavaScript Validator](https://jshint.com) - the JavaScript validator was to be used - did not throw up and issues. 
 
    ### Python validation 
-[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself see table:
+[CI Python Linter](https://pep8ci.herokuapp.com/#) will be used to validate the python code.
 
-## PEP8CI Python Linter Results  ###### TO COMPILE FOR GIFTING GENIE _ USE SAME FORMAT ####
 
-| File Path | Description | PEP8CI Python Linter Result (after errors corrected)
-|-----------|-------------|-----------------------------|
-| `manage.py` | Project management script | E501 | all clear
-| `blog/__init__.py` | Blog app initialization | all clear 
-| `blog/admin.py` | Blog app admin configuration | all clear |
-| `blog/apps.py` | Blog app configuration | all clear |
-| `blog/forms.py` | Blog app forms | all clear|
-| `blog/models.py` | Blog app models | all clear |
-| `blog/urls.py` | Blog app URL configuration | all clear |
-| `blog/views.py` | Blog app views | all clear |
-| `blog/test_forms.py` | Blog app form tests | all clear |
-| `blog/test_views.py` | Blog app view tests | all clear |
-| `nuclear_knowledge/settings.py` | Nuclear Knowledge app settings | all clear |
-| `nuclear_knowledge/urls.py` | Nuclear Knowledge app URL configuration | all clear |
-| `nuclear_knowledge/wsgi.py` | Nuclear Knowledge app WSGI configuration | all clear |
-  -->
 
 ## Lighthouse scores from Heroku deployed app via Chrome dev tools 
 ![lighthouse](readme.docs/Lighthouse_testing-result.png)
@@ -505,18 +455,10 @@ The performance score is ~~acceptable.~~
 
 <br>
 
-
-### Issues/Bugs ######
-  
- Here is a very short snippet of the bugs encountered throughout the coding, testing and regular deployment of the app. 
- [Table of Bugs and Fixes](readme.docs/table_of_bugs_&_fixes_snippet.png) **IMPORT LIVE TABLE**
-
-
 ### Agile Process for Gifting-Genie
 
 We adopted an agile methodology using a GitHub project board, applying MoSCoW prioritization to manage my tasks. The board was regularly updated to ensure all 'Must have' and 'Should have' features were addressed. Some 'Could have' issues remain in the backlog for future sprints, as detailed in the 'Future Features' section below.
 
-~~Although I attempted to remain focused on the core tasks, I also integrated several additional features, such as:~~
 
 
 ## CREDITS
@@ -527,20 +469,19 @@ We adopted an agile methodology using a GitHub project board, applying MoSCoW pr
   - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
   was used as a reference when writing the README.
   - [Code Institute](https://learn.codeinstitute.net/) The IDE was used for extra reference for HTML, CSS, Python and Django
-  - [W3 Schools](https://www.w3schools.com/) was used for reference on syntax
-
   
 **Media**
  - All images not generated from DALL.E AI were obatined from:
   - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
   - [Ignore X frame headers](https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
     was used to download a Chrome extension to allow the resposivity image to be taken.
+  - [CODE OPEN IO](https://codepen.io/RoyLee0702/pen/RwNgVya) was used to create the giftbox animation
+  - [BOOTSWATCH](https://bootswatch.com) was used for the css styling using the Quartz theme
 
 
 **Acknowledgements**
 - Code Institute Facilitator Dillon McCaffrey for his encouragement, patience, guidance and support.
 - Code Institute SME Coach John Rearden for coding advice
 - Code Institue Coding Coach Ruairidh MacArthur for GIT advice
-- 
-- 
+
 
