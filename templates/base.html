@@ -47,7 +47,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     {% if user.is_authenticated %}
-<<<<<<< Updated upstream
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link d-flex align-items-center profile-link"
                                 href="{% url 'myaccount:myaccount_home' %}">
@@ -61,7 +60,6 @@
                                 <span class="profile-text">{{ user.username }}</span>
                             </a>
                         </li>
-=======
                     <li class="nav-item d-flex align-items-center">
                         <a class="nav-link d-flex align-items-center profile-link" href="{% url 'myaccount_home' request.user.id %}">
                             {% if user.myaccount.profile_image %}
@@ -96,7 +94,6 @@
                         <a class="btn btn-primary btn-rounded ms-2" href="{% url 'account_login' %}">
                             Log in
                         </a>
->>>>>>> Stashed changes
                         {% endif %}
                         <li class="nav-item">
                             <a class="nav-link trans-text" aria-current="page" href="#">Home</a>
