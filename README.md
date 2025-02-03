@@ -1,11 +1,11 @@
 # Gifting Genie - A Gift Giving Alert System
 Created by: Phillip Kershaw, Christopher Matthew, Geraldine Edwards and Joanna O'Connor. 
 
-<img width="612" alt="" src="readme.docs/...">
+<img width="612" alt="responsive screens landing page for the Gifting Genie app" src="readme.docs/images/responsive_design_landing_page.png">
 
 
 link to Heroku (live page)
-> [View live project here]()
+> [View live project here](https://gift-genie-bb00e28764e5.herokuapp.com/)
 
 Github link 
 > [view Github repo here](https://github.com/Philgck/gifting-genie-two)
@@ -82,7 +82,7 @@ Gifting-Genie is designed to simplify and enhance the experience of managing eve
 
 INTENDED AUDIENCE
 - Gifting-Genie caters to a diverse audience, including:
-- ndividuals: Anyone looking to manage their personal events, keep a list of gift ideas, and connect with friends to share and view wishlists and event details.
+- Individuals: Anyone looking to manage their personal events, keep a list of gift ideas, and connect with friends to share and view wishlists and event details.
 - Families and Friends: Groups of users who want to coordinate gift-giving and event planning within their social circles, ensuring everyone is on the same page for special occasions.
 - Event Planners: Professionals or enthusiasts who need a reliable tool to organize events, track important dates, and manage guest lists and gift registries.
 - Communities and Clubs: Social groups and organizations that want to maintain a shared calendar of events and coordinate gift exchanges among members.
@@ -105,9 +105,9 @@ Title | User story | MoSCoW prioritisation |
 
   
 We used [GitHub Projects](https://github.com/users/Philgck/projects/13) to create a project board and populated it with user stories and added labels according to MoSCoW prioritisation.
-All of the 'must have' user stories ###### are/were not completed ~~with any other issues being carried over to the next sprint of the project development.~~
+All but one of the 'must have' user stories were completed with any other issues being carried over to the next sprint of the project development.
 
-![Project Board](readme.docs/project_board_Moscow_labels.png)
+![Project Board](readme.docs/images/project_board.png)
 
 Each user story had acceptance criteria added.The fulfillment of the criteria for each of these can be demonstrated by the presence of the features on the site (see below). The CRUD funtionality of the 'Event', 'Wish List' and 'Friends' models were tested extensively throughout each development phase both manually and through automated unit tests. 
 
@@ -150,7 +150,6 @@ Each user story had acceptance criteria added.The fulfillment of the criteria fo
 ## CREATION PROCESS
 
   ### Wireframes
-Wireframes were created using...............
 <details open>
 <summary>Landing page wireframe desktop view </summary>
 <img width="1080" alt="Landing page wireframe" src="readme.docs/images/wireframe_landing page.png">
@@ -178,32 +177,23 @@ The website uses the following fonts:
 
 ### Colour Scheme
 
-The color scheme of the website is designed to provide a clean, non-intrusive background that is easily viewed in both light and dark modes. This design choice follows a style often used by information and education sites, such as Wikipedia. The primary colors used are:
+The color scheme of the website is was taken from open source Bootswatch (https://bootswatch.com/quartz/) and we chose the Quartz theme which provides a fun and colourful background and a non-intrusive background that is easily viewed in both light and dark modes. This design was chosen as it had a fun and warm feel to associate with gift-giving occasions. 
 
-- **Black and White**: The almost black and white color scheme provides a neutral background that does not distract from the content. This ensures that the text is easily readable and the images stand out.
-- **Accent Colors**: 
-  - **Blue (#005eff)**: Used for links, buttons, and other interactive elements to draw attention without being overwhelming.
-  - **Green (#28a745)**: Used for positive actions such as the "Add Comment" button.
-  - **Yellow (#ffc107)**: Used for the "Return Home" button to provide a bright, noticeable call to action.
-  - **Red (#e0a800)**: Used for hover states to indicate interactivity.
-
-The palette was chosen using [Coolors](https://coolors.co/).
 
 ### Imagery
-- **DALL·E**: AI-generated images via Chat GPT that provide unique and creative visuals for the blog posts. 
 - **Pixabay**: Royalty-free stock images that are used to complement the content. [Pixabay](https://pixabay.com/)
 
 The 'Gifting Genie' icon is used as the icon to enhance the visual appeal and usability of the website. The same icon is included both on each page in the Navbar and as a recognisable icon as the favicon for the tab. [Procreate](https://procreate.com/)
+![favicon and icon](readme.docs/images/icon_and_favicon.png)
 
 ### Layout and Styling
 
 The website features a consistent layout and styling across all pages, ensuring a cohesive user experience. Key design elements include:
 
-- **Header**: The header contains a collapsible navbar that is consistent across all pages. It includes links to the main sections of the website, such as ~~Home, Nuclear Facilities, Nuclear Fuel & Waste, Nuclear Defence, Nuclear Power in Space, Fact or Fiction, and Educational Resources.~~ The navbar also includes login and signup links for unauthenticated users and a logout button for authenticated users.
+- **Header**: The header contains a collapsible navbar that is consistent across all pages. It includes links to the main sections of the website, pplanner, friendslist and user wishlists. The navbar also includes login and signup links for unauthenticated users and a logout button for authenticated users.
 - **Collapsible Navbar**: The navbar is designed to be responsive and collapses into a hamburger menu on smaller screens. This ensures that the navigation is accessible and user-friendly on all devices.
-- **Footer**: The footer is consistent across all pages and includes links to social media apps Facebook, X (formerly Twitter) and Instagram. It maintains the same styling as the header, providing a cohesive look and feel across all pages.
-- **Main Content Area**: The main content area is designed to be flexible and accommodate various types of content, including text, images, and interactive elements. It is styled to ensure readability and a pleasant user experience.
-    
+- **Footer**: The footer is consistent across all pages and includes links to social media apps Facebook, X (formerly Twitter), Instagram and Pintrest. The styling is cohesive across all pages to give a cohesive look and feel across all pages.
+   
  ---
 
 ## WEBSITE FEATURES 
@@ -213,7 +203,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details open>
   <summary>landing page</summary>
 
-  ![home-page](readme.docs/landing_page.png)
+  ![home-page](readme.docs/images/landing_page.png)
 
   </details>
   Users arrive directly on the landing page which outlines the purpose of the app immediately rather than requiring users to log in or register before being able to see anything in order to entice users to then sign-up in order to use the features.
@@ -224,16 +214,17 @@ The website features a consistent layout and styling across all pages, ensuring 
 <details open>
   <summary>Authentication page</summary>
 
-  ![Signup Page](readme.docs/signup_page_view.png)
-  ![login-page](readme.docs/login_page.png) 
+  ![Signup Page](readme.docs/images/signup_page_view.png)
+  ![login-page](readme.docs/images/login_feature.png) 
+  ![sign-out-page](readme.docs/images/sign_out_confirm.png) 
 
-  Users must be registered via the sign up page and/or login to navigate from the landing page to their user profile. The login page/sign up notice will pop up if the user is not logged in when the landing page is clicked. Incomplete fields will receive prompts. 
+  Users must be registered via the sign up page and/or login to navigate from the landing page to their user profile. The login page/sign up notice will pop up if the user is not logged in when the landing page is clicked. Incomplete fields will receive prompts. A signout confirmation is requested if a user selects to sign out. 
 
 **USER PROFILE VIEW** 
   <details open>
   <summary>User Profile Page</summary>
 
-  ![User Profile Page](readme.docs/user-profile_page_view.png)
+  ![User Profile Page](readme.docs/images/user_profile_page_view.png)
  
   </details>
   Authenticated users then access their calendar to add, view or edit events; add, view or modify wishlists, and view or modify their friends list from their own user profile. 
@@ -244,7 +235,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>Calendar of events</summary>
 
-  ![events-detail](readme.docs/events_detail_page_view.png)
+  ![events-detail](readme.docs/images/populated_planner_view.png)
 
   </details>
   The detailed view a calendar containing user added events.
@@ -255,7 +246,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>A populated wishlish example</summary>
 
-  ![comment](readme.docs/example_wishlist.png)
+  ![comment](readme.docs/images/my_wishlist_populated_view.png)
 
   </details>
   Each user-associated wishlist contains user-added items. Users can edit/delete items on their wishlist. 
@@ -267,53 +258,28 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>Example associated Friends List</summary>
 
-  ![comment](readme.docs/example_friends_list.png)
+  ![comment](readme.docs/images/basic_friends_list_for_user_1.png)
 
   </details>
   Each user-associated wishlist contains user-added items. Users can edit/delete items on their wishlist. 
   
 <br> -->
 
-**FRIENDS USER PROFILE VIEW**
-  <details>
-  <summary>A view of a friend's profile</summary>
-
-  ![comment](readme.docs/example_friend_profile.png)
-
-  </details>
-  Each user can view selected friends' profiles and view their events and wishlists.  
-  
-
-<br> -->
-
-  **CUSTOMISED ADMIN PANEL**
-  <details>
-  <summary>Admin Panel</summary>
-
-  ![comment](readme.docs/create_topic_view_django_admin.png)
-
-  </details>
-The admin panel, a feature of Django, was customized using Summernote to enhance the styling of the ~~topics. A filter panel function was added to distinguish between published and unpublished topic-blogs. Additionally, a 'category' selector was integrated into the 'create topic' view to ensure new topic-blogs are assigned to the appropriate topic-page.~~
-
-<br>
-
-
- ---
+---
 
 ## FUTURE FEATURES
 The following would be options to consider including in future versions of the website:
  
   - Include a 'Search Events' feature for users to search for events using search keywords that navigates user to the event details from the search results.
-  - Include a 'Search Friends' feature where friends can be searched for by username
-  - Include a 'Share invite to Friends' feature to link authenticated users with their family and freiends
+  - Include a 'Share invite to Friends' feature to link authenticated users with their family and friends
   - Users can select items on a friend's wishlist to indicate intended purchase so that both the friend and other viewers of the wishlist can identify available items. 
-    - Requested friends can receive notifications (via a preferred method eg email or in-app) when other users edit their wishlist to indicate intention of purchase. 
+  - Requested friends can receive notifications (via a preferred method eg email or in-app) when other users edit their wishlist to indicate intention of purchase. 
   - Friends can receive notifications (via a preferred method eg email or in-app) that another friend has created a new event or wishlist. 
     
 
 ## TECHNOLOGIES USED
 
-  ### Languages Used ######
+  ### Languages Used
 
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
 ![asgiref](https://img.shields.io/badge/asgiref-3.8.1-blue)
@@ -346,7 +312,6 @@ The following would be options to consider including in future versions of the w
 ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-AI%20Assistant-blue)
 ![Perplexity](https://img.shields.io/badge/Perplexity-Tool-lightgrey)
 ![Wikipedia](https://img.shields.io/badge/Wikipedia-Resource-blue)
-![Wave](https://img.shields.io/badge/Wave-Accessibility%20Tool-brightgreen)
 ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-Icons-blue)
 ![W3C HTML Validator](https://img.shields.io/badge/W3C%20HTML%20Validator-Pass-brightgreen)
 ![W3C CSS Validator](https://img.shields.io/badge/W3C%20CSS%20Validator-Pass-brightgreen)
@@ -361,46 +326,47 @@ The following would be options to consider including in future versions of the w
 ![Heroku](https://img.shields.io/badge/Heroku-Hosting-purple)
 ![Diffchecker](https://img.shields.io/badge/Diffchecker-Tool-blue)
 ![Flexbox](https://img.shields.io/badge/Flexbox-CSS%20Layout-blue)
-![DALL·E](https://img.shields.io/badge/DALL·E-AI%20Image%20Generation-blue)
 ![Pixabay](https://img.shields.io/badge/Pixabay-Image%20Library-green)
 
  ---
 
 ### AI AUGMENTATION 
 ## Leveraging AI Tools for Code Creation ##
-<!-- During the development of the 'Nuclear Knowledge' nuclear physics blog app, I utilized GitHub Copilot to assist in code creation. Copilot provided valuable code snippets and suggestions that accelerated the development process. Key areas where AI was used include:
-- Generating Views and Templates: Copilot was instrumental in generating Django views and HTML templates. For instance, the initial structure of views such as nuclear_facilities, nuclear_fuel_waste, and nuclear_defence were generated using Copilot. These snippets provided a solid foundation, which I then manually checked and modified to fit the project's specific requirements.
- - Form Handling: Copilot assisted in creating forms for user input, such as CommentForm and TopicForm. The generated code snippets were reviewed and adjusted to ensure they met the application's validation and processing needs.
- - File and Directory Management: Copilot was invaluable in reminding me of the numerous files and directories to amend when new models, views, or features were introduced, ensuring that all the correct files were updated.
-While Copilot provided a significant boost in productivity, it was essential to manually review and modify the generated code to ensure accuracy and alignment with project requirements. -->
+Collecting workspace information
 
-- AI-Assisted Debugging
-<!-- GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
-  - Error Handling: Copilot suggested error handling mechanisms for views and forms. For example, it provided initial code for handling form validation errors, which I then refined to improve user feedback and error reporting.
-  - Debugging Views: When encountering issues with view logic, Copilot suggested potential fixes and improvements. These suggestions were cross-referenced with the current code using tools like Diffchecker and W3S to ensure the changes were appropriate and did not introduce new issues.-->
+Certainly! Here is a detailed description of how AI has been used in this project for the specified sections in the README:
 
+### Leveraging AI Tools for Code Creation
+During the development of the Gifting Genie app, GitHub Copilot was utilized to assist in code creation. Copilot provided valuable code snippets and suggestions that accelerated the development process. Key areas where AI was used include:
+- **Generating Views and Templates**: Copilot was instrumental in generating Django views and HTML templates. For instance, the initial structure of views such as `wishlist_view`, `add_event`, and `profile_view` were generated using Copilot. These snippets provided a solid foundation, which were then manually checked and modified to fit the project's specific requirements.
+- **Form Handling**: Copilot assisted in creating forms for user input, such as `WishlistItemForm` and `PlannerForm`. The generated code snippets were reviewed and adjusted to ensure they met the application's validation and processing needs.
+- **File and Directory Management**: Copilot was invaluable in reminding the developer of the numerous files and directories to amend when new models, views, or features were introduced, ensuring that all the correct files were updated.
+While Copilot provided a significant boost in productivity, it was essential to manually review and modify the generated code to ensure accuracy and alignment with project requirements.
+
+### AI-Assisted Debugging
+GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
+- **Error Handling**: Copilot suggested error handling mechanisms for views and forms. For example, it provided initial code for handling form validation errors, which were then refined to improve user feedback and error reporting.
+- **Debugging Views**: When encountering issues with view logic, Copilot suggested potential fixes and improvements. These suggestions were cross-referenced with the current code using tools like Diffchecker and W3S to ensure the changes were appropriate and did not introduce new issues.
 Manual use of Diffchecker was crucial in comparing Copilot's suggestions with the existing codebase, ensuring that only the most relevant and accurate changes were implemented.
 
-- Optimizing Code for Performance and User Experience
-<!-- Copilot was also used to optimize code for performance and enhance user experience:
-  - Efficient Query Handling: Copilot suggested optimizations for database queries, such as using Django's select_related and prefetch_related to reduce the number of database hits and improve performance.
-  - Responsive Design: Copilot provided initial CSS and JavaScript snippets to enhance the application's responsiveness. These snippets were manually adjusted to ensure a seamless user experience across different devices using my own color choices and fonts, as well as Bootstrap and Flexbox for structure and positioning.-->
+### Optimizing Code for Performance and User Experience
+Copilot was also used to optimize code for performance and enhance user experience:
+- **Efficient Query Handling**: Copilot suggested optimizations for database queries, such as using Django's `select_related` and `prefetch_related` to reduce the number of database hits and improve performance.
+- **Responsive Design**: Copilot provided initial CSS and JavaScript snippets to enhance the application's responsiveness. These snippets were manually adjusted to ensure a seamless user experience across different devices using custom color choices and fonts, as well as Bootstrap and Flexbox for structure and positioning.
 
-- Generating Django Unit Tests
-<!-- Copilot assisted in generating Django unit tests to ensure code coverage for key functionalities:
-  - Test Logic Generation: Copilot generated initial test cases for views, forms, and models. For example, it provided test cases for creating, editing, and deleting comments, as well as liking and unliking topics. These tests were reviewed and adjusted to improve accuracy and completeness.
-  - Ensuring Code Coverage: Copilot's suggestions helped ensure all critical paths were tested. For instance, it generated tests for edge cases, such as handling invalid form submissions and testing user permissions.
-The generated test logic demonstrated a basic understanding of the application's functionality, and manual adjustments were made to ensure the tests accurately reflected the intended behavior.-->
+### Generating Django Unit Tests
+Copilot assisted in generating Django unit tests to ensure code coverage for key functionalities:
+- **Test Logic Generation**: Copilot generated initial test cases for views, forms, and models. For example, it provided test cases for creating, editing, and deleting wishlist items, as well as adding and removing friends. These tests were reviewed and adjusted to improve accuracy and completeness.
+- **Ensuring Code Coverage**: Copilot's suggestions helped ensure all critical paths were tested. For instance, it generated tests for edge cases, such as handling invalid form submissions and testing user permissions. The generated test logic demonstrated a basic understanding of the application's functionality, and manual adjustments were made to ensure the tests accurately reflected the intended behavior.
 
-- Additional AI Tools
-<!-- In addition to GitHub Copilot, other AI tools were leveraged in much lesser forms:
-  - Perplexity: Used for generic questions regarding feature planning and implementation, providing valuable insights and information.
-  - Microsoft Copilot: Assisted in generating user stories and blog content based on key information provided by myself.
-  - ChatGPT DALL·E: Used to create custom images, including the landing page masthead, enhancing the visual appeal of the application. However due to a daily 'image creation limit' the images were developed in stages. 
-  - DeepSeek: Trialed for its excellent insights into processes applied to problems. However, it was often unavailable due to high traffic.-->
+### Additional AI Tools
+In addition to GitHub Copilot, other AI tools were leveraged in much lesser forms:
+- **Perplexity**: Used for generic questions regarding feature planning and implementation, providing valuable insights and information.
+- **Microsoft Copilot**: Assisted in generating user stories and blog content based on key information provided by the developer
 
-- Reflection on AI Tools
-<!-- Using GitHub Copilot and other AI tools significantly enhanced the development process by providing relevant code snippets and suggestions. They accelerated the initial coding phase, assisted in debugging, and ensured comprehensive test coverage. However, it was essential to manually review and adjust the generated code to ensure it met the project's specific requirements and maintained high standards of quality and performance. Copilot can occasionally repeat itself despite clear prompts, as if it 'forgets' the previous steps or the focus of the initial query, which can be time-consuming. It is crucial to know when to manually take over reviewing the code.-->
+### Reflection on AI Tools
+Using GitHub Copilot and other AI tools significantly enhanced the development process by providing relevant code snippets and suggestions. They accelerated the initial coding phase, assisted in debugging, and ensured comprehensive test coverage. However, it was essential to manually review and adjust the generated code to ensure it met the project's specific requirements and maintained high standards of quality and performance. Copilot can occasionally repeat itself despite clear prompts, as if it 'forgets' the previous steps or the focus of the initial query, which can be time-consuming. It is crucial to know when to manually take over reviewing the code.
+
 
 ## DEPLOYMENT of Gifting-Genie
 The site was deployed to Heroku. The steps to deploy are as follows:
@@ -428,29 +394,6 @@ Navigate to Deploy tab
 
 ## TESTING
 
- ### Unit Tests ###### TO BE UPDATED FOR GIFTING GENIE _ USE SAME FORMAT ######
-
-The following automated Unit Tests were performed from test_views.py and test_forms.py:
-
-| Test Category            | Test Description                                                                 |
-|--------------------------|----------------------------------------------------------------------------------|
-| **Test Setup**           | Initializes test data, including creating a regular user, an admin user, and a sample topic. |
-| **Test Topic Detail Page** | Verifies that the topic detail page renders correctly with the topic details when accessed by an admin user. |
-|                          | Ensures that the create topic page renders correctly and uses the appropriate template. |
-|                          | Confirms that the edit topic page renders correctly and uses the appropriate template. |
-|                          | Checks that the delete topic page renders correctly and uses the appropriate template. |
-| **Test Forms**           | Ensures that the comment form is valid when provided with valid data.             |
-|                          | Verifies that the comment form is invalid when provided with empty data.          |
-|                          | Confirms that the topic form is valid when provided with valid data.              |
-|                          | Ensures that the topic form is invalid when provided with empty data.             |
-| **Test Models**          | Verifies that the string representation of the topic model returns the topic title. |
-|                          | Ensures that the string representation of the comment model returns the first 20 characters of the comment body. |
-| **Test Comment Functionality** | Verifies that a comment can be added to a topic.                              |
-|                          | Ensures that a comment can be edited.                                             |
-|                          | Confirms that a comment can be deleted.                                           |
-
-  ### HTML validation
-
 I have used the W3C Markup validator to validate all of my HTML code - [W3C Markup Validator](https://validator.w3.org/)
 
 Pages in this project are developed using DTL and all except the landing page (and login, logout and sign-up pages which are Django admin tools that I have no control over) require user authentication. The HTML validator will throw errors if I were to use the URL so I followed the below approach for the landing page and the templates:
@@ -461,12 +404,9 @@ Pages in this project are developed using DTL and all except the landing page (a
 [home page html validation](readme.docs/...)
 [A MODEL page html validation](readme.docs/...)
 
-HTML was checked and ~~had no errors or warnings to show as indicated above.~~
-~~The home (landing) page had some initial syntax errors which were identified and corrected and then commited the code and the validation was clear.~~
-
    ### CSS validation
 
-[CSS validation](readme.docs/css_validation.png)
+[CSS validation](readme.docs/...)
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS file. External CSS for Bootstrap, provided by [CDN](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css) was not tested.
 
@@ -475,48 +415,23 @@ HTML was checked and ~~had no errors or warnings to show as indicated above.~~
   [JavaScript Validator](https://jshint.com) - the JavaScript validator was to be used - did not throw up and issues. 
 
    ### Python validation 
-[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the python files I created or edited myself see table:
+[CI Python Linter](https://pep8ci.herokuapp.com/#) will be used to validate the python code.
 
-## PEP8CI Python Linter Results  ###### TO COMPILE FOR GIFTING GENIE _ USE SAME FORMAT ####
 
-| File Path | Description | PEP8CI Python Linter Result (after errors corrected)
-|-----------|-------------|-----------------------------|
-| `manage.py` | Project management script | E501 | all clear
-| `blog/__init__.py` | Blog app initialization | all clear 
-| `blog/admin.py` | Blog app admin configuration | all clear |
-| `blog/apps.py` | Blog app configuration | all clear |
-| `blog/forms.py` | Blog app forms | all clear|
-| `blog/models.py` | Blog app models | all clear |
-| `blog/urls.py` | Blog app URL configuration | all clear |
-| `blog/views.py` | Blog app views | all clear |
-| `blog/test_forms.py` | Blog app form tests | all clear |
-| `blog/test_views.py` | Blog app view tests | all clear |
-| `nuclear_knowledge/settings.py` | Nuclear Knowledge app settings | all clear |
-| `nuclear_knowledge/urls.py` | Nuclear Knowledge app URL configuration | all clear |
-| `nuclear_knowledge/wsgi.py` | Nuclear Knowledge app WSGI configuration | all clear |
-  -->
 
 ## Lighthouse scores from Heroku deployed app via Chrome dev tools 
-![lighthouse](readme.docs/Lighthouse_testing-result.png)
+![lighthouse](readme.docs/images/lighthouse_desktop.png)
+![lighthouse](readme.docs/images/lighthouse_mobile.png.png)
+We were delighted that our recent Lighthouse audit yielded excellent performance scores for the desktop version of our application. This achievement reflects the hard work and dedication of our development team in optimizing the user experience for desktop users. However, we also noted that the mobile performance scores were not up to our expectations. Recognizing the importance of a seamless mobile experience, we have prioritized addressing these issues in the upcoming sprint. Our team is committed to enhancing mobile performance to ensure that all users, regardless of their device, enjoy a fast and responsive application.
 
-The performance score is ~~acceptable.~~
- - Accesibility ~~88% (close to the 90% breakpoint!) was due to an insufficent contrast ratio of the heading text in the masthead image (which can be improved in future sprint) although it passed 10 audits.~~
-  - Performance ~~89% (close to the 90% breakpoint!) was due to the size of some images (which can be reduced in future sprints). 18 audits passed.~~
+
 
 <br>
-
-
-### Issues/Bugs ######
-  
- Here is a very short snippet of the bugs encountered throughout the coding, testing and regular deployment of the app. 
- [Table of Bugs and Fixes](readme.docs/table_of_bugs_&_fixes_snippet.png) **IMPORT LIVE TABLE**
-
 
 ### Agile Process for Gifting-Genie
 
 We adopted an agile methodology using a GitHub project board, applying MoSCoW prioritization to manage my tasks. The board was regularly updated to ensure all 'Must have' and 'Should have' features were addressed. Some 'Could have' issues remain in the backlog for future sprints, as detailed in the 'Future Features' section below.
 
-~~Although I attempted to remain focused on the core tasks, I also integrated several additional features, such as:~~
 
 
 ## CREDITS
@@ -527,20 +442,19 @@ We adopted an agile methodology using a GitHub project board, applying MoSCoW pr
   - [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME)
   was used as a reference when writing the README.
   - [Code Institute](https://learn.codeinstitute.net/) The IDE was used for extra reference for HTML, CSS, Python and Django
-  - [W3 Schools](https://www.w3schools.com/) was used for reference on syntax
-
   
 **Media**
  - All images not generated from DALL.E AI were obatined from:
   - [Amiresponsive](https://ui.dev/amiresponsive) for the responsivity mockup on the README.
   - [Ignore X frame headers](https://chromewebstore.google.com/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
     was used to download a Chrome extension to allow the resposivity image to be taken.
+  - [CODE OPEN IO](https://codepen.io/RoyLee0702/pen/RwNgVya) was used to create the giftbox animation
+  - [BOOTSWATCH](https://bootswatch.com) was used for the css styling using the Quartz theme
 
 
 **Acknowledgements**
 - Code Institute Facilitator Dillon McCaffrey for his encouragement, patience, guidance and support.
 - Code Institute SME Coach John Rearden for coding advice
 - Code Institue Coding Coach Ruairidh MacArthur for GIT advice
-- 
-- 
+
 
