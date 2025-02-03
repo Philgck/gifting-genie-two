@@ -358,39 +358,44 @@ The following would be options to consider including in future versions of the w
 
 ### AI AUGMENTATION 
 ## Leveraging AI Tools for Code Creation ##
-<!-- During the development of the 'Nuclear Knowledge' nuclear physics blog app, I utilized GitHub Copilot to assist in code creation. Copilot provided valuable code snippets and suggestions that accelerated the development process. Key areas where AI was used include:
-- Generating Views and Templates: Copilot was instrumental in generating Django views and HTML templates. For instance, the initial structure of views such as nuclear_facilities, nuclear_fuel_waste, and nuclear_defence were generated using Copilot. These snippets provided a solid foundation, which I then manually checked and modified to fit the project's specific requirements.
- - Form Handling: Copilot assisted in creating forms for user input, such as CommentForm and TopicForm. The generated code snippets were reviewed and adjusted to ensure they met the application's validation and processing needs.
- - File and Directory Management: Copilot was invaluable in reminding me of the numerous files and directories to amend when new models, views, or features were introduced, ensuring that all the correct files were updated.
-While Copilot provided a significant boost in productivity, it was essential to manually review and modify the generated code to ensure accuracy and alignment with project requirements. -->
+Collecting workspace information
 
-- AI-Assisted Debugging
-<!-- GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
-  - Error Handling: Copilot suggested error handling mechanisms for views and forms. For example, it provided initial code for handling form validation errors, which I then refined to improve user feedback and error reporting.
-  - Debugging Views: When encountering issues with view logic, Copilot suggested potential fixes and improvements. These suggestions were cross-referenced with the current code using tools like Diffchecker and W3S to ensure the changes were appropriate and did not introduce new issues.-->
+Certainly! Here is a detailed description of how AI has been used in this project for the specified sections in the README:
 
+### Leveraging AI Tools for Code Creation
+During the development of the Gifting Genie app, GitHub Copilot was utilized to assist in code creation. Copilot provided valuable code snippets and suggestions that accelerated the development process. Key areas where AI was used include:
+- **Generating Views and Templates**: Copilot was instrumental in generating Django views and HTML templates. For instance, the initial structure of views such as `wishlist_view`, `add_event`, and `profile_view` were generated using Copilot. These snippets provided a solid foundation, which were then manually checked and modified to fit the project's specific requirements.
+- **Form Handling**: Copilot assisted in creating forms for user input, such as `WishlistItemForm` and `PlannerForm`. The generated code snippets were reviewed and adjusted to ensure they met the application's validation and processing needs.
+- **File and Directory Management**: Copilot was invaluable in reminding the developer of the numerous files and directories to amend when new models, views, or features were introduced, ensuring that all the correct files were updated.
+While Copilot provided a significant boost in productivity, it was essential to manually review and modify the generated code to ensure accuracy and alignment with project requirements.
+
+### AI-Assisted Debugging
+GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
+- **Error Handling**: Copilot suggested error handling mechanisms for views and forms. For example, it provided initial code for handling form validation errors, which were then refined to improve user feedback and error reporting.
+- **Debugging Views**: When encountering issues with view logic, Copilot suggested potential fixes and improvements. These suggestions were cross-referenced with the current code using tools like Diffchecker and W3S to ensure the changes were appropriate and did not introduce new issues.
 Manual use of Diffchecker was crucial in comparing Copilot's suggestions with the existing codebase, ensuring that only the most relevant and accurate changes were implemented.
 
-- Optimizing Code for Performance and User Experience
-<!-- Copilot was also used to optimize code for performance and enhance user experience:
-  - Efficient Query Handling: Copilot suggested optimizations for database queries, such as using Django's select_related and prefetch_related to reduce the number of database hits and improve performance.
-  - Responsive Design: Copilot provided initial CSS and JavaScript snippets to enhance the application's responsiveness. These snippets were manually adjusted to ensure a seamless user experience across different devices using my own color choices and fonts, as well as Bootstrap and Flexbox for structure and positioning.-->
+### Optimizing Code for Performance and User Experience
+Copilot was also used to optimize code for performance and enhance user experience:
+- **Efficient Query Handling**: Copilot suggested optimizations for database queries, such as using Django's `select_related` and `prefetch_related` to reduce the number of database hits and improve performance.
+- **Responsive Design**: Copilot provided initial CSS and JavaScript snippets to enhance the application's responsiveness. These snippets were manually adjusted to ensure a seamless user experience across different devices using custom color choices and fonts, as well as Bootstrap and Flexbox for structure and positioning.
 
-- Generating Django Unit Tests
-<!-- Copilot assisted in generating Django unit tests to ensure code coverage for key functionalities:
-  - Test Logic Generation: Copilot generated initial test cases for views, forms, and models. For example, it provided test cases for creating, editing, and deleting comments, as well as liking and unliking topics. These tests were reviewed and adjusted to improve accuracy and completeness.
-  - Ensuring Code Coverage: Copilot's suggestions helped ensure all critical paths were tested. For instance, it generated tests for edge cases, such as handling invalid form submissions and testing user permissions.
-The generated test logic demonstrated a basic understanding of the application's functionality, and manual adjustments were made to ensure the tests accurately reflected the intended behavior.-->
+### Generating Django Unit Tests
+Copilot assisted in generating Django unit tests to ensure code coverage for key functionalities:
+- **Test Logic Generation**: Copilot generated initial test cases for views, forms, and models. For example, it provided test cases for creating, editing, and deleting wishlist items, as well as adding and removing friends. These tests were reviewed and adjusted to improve accuracy and completeness.
+- **Ensuring Code Coverage**: Copilot's suggestions helped ensure all critical paths were tested. For instance, it generated tests for edge cases, such as handling invalid form submissions and testing user permissions. The generated test logic demonstrated a basic understanding of the application's functionality, and manual adjustments were made to ensure the tests accurately reflected the intended behavior.
 
-- Additional AI Tools
-<!-- In addition to GitHub Copilot, other AI tools were leveraged in much lesser forms:
-  - Perplexity: Used for generic questions regarding feature planning and implementation, providing valuable insights and information.
-  - Microsoft Copilot: Assisted in generating user stories and blog content based on key information provided by myself.
-  - ChatGPT DALL·E: Used to create custom images, including the landing page masthead, enhancing the visual appeal of the application. However due to a daily 'image creation limit' the images were developed in stages. 
-  - DeepSeek: Trialed for its excellent insights into processes applied to problems. However, it was often unavailable due to high traffic.-->
+### Additional AI Tools
+In addition to GitHub Copilot, other AI tools were leveraged in much lesser forms:
+- **Perplexity**: Used for generic questions regarding feature planning and implementation, providing valuable insights and information.
+- **Microsoft Copilot**: Assisted in generating user stories and blog content based on key information provided by the developer
 
-- Reflection on AI Tools
-<!-- Using GitHub Copilot and other AI tools significantly enhanced the development process by providing relevant code snippets and suggestions. They accelerated the initial coding phase, assisted in debugging, and ensured comprehensive test coverage. However, it was essential to manually review and adjust the generated code to ensure it met the project's specific requirements and maintained high standards of quality and performance. Copilot can occasionally repeat itself despite clear prompts, as if it 'forgets' the previous steps or the focus of the initial query, which can be time-consuming. It is crucial to know when to manually take over reviewing the code.-->
+### Reflection on AI Tools
+Using GitHub Copilot and other AI tools significantly enhanced the development process by providing relevant code snippets and suggestions. They accelerated the initial coding phase, assisted in debugging, and ensured comprehensive test coverage. However, it was essential to manually review and adjust the generated code to ensure it met the project's specific requirements and maintained high standards of quality and performance. Copilot can occasionally repeat itself despite clear prompts, as if it 'forgets' the previous steps or the focus of the initial query, which can be time-consuming. It is crucial to know when to manually take over reviewing the code.
+
+### AI-Assisted Debugging
+GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
+
 
 ## DEPLOYMENT of Gifting-Genie
 The site was deployed to Heroku. The steps to deploy are as follows:
