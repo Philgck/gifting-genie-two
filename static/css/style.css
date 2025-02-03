@@ -305,6 +305,12 @@ body.menu-open .menu {
     margin: 50px auto;
 }
 
+.scrollable-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 15px; /* Optional: Add padding to avoid scrollbar overlap */
+}
+
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
