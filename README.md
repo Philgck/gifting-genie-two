@@ -393,9 +393,6 @@ In addition to GitHub Copilot, other AI tools were leveraged in much lesser form
 ### Reflection on AI Tools
 Using GitHub Copilot and other AI tools significantly enhanced the development process by providing relevant code snippets and suggestions. They accelerated the initial coding phase, assisted in debugging, and ensured comprehensive test coverage. However, it was essential to manually review and adjust the generated code to ensure it met the project's specific requirements and maintained high standards of quality and performance. Copilot can occasionally repeat itself despite clear prompts, as if it 'forgets' the previous steps or the focus of the initial query, which can be time-consuming. It is crucial to know when to manually take over reviewing the code.
 
-### AI-Assisted Debugging
-GitHub Copilot played a crucial role in identifying and resolving bugs. Key interventions include:
-
 
 ## DEPLOYMENT of Gifting-Genie
 The site was deployed to Heroku. The steps to deploy are as follows:
