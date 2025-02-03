@@ -421,7 +421,8 @@ Pages in this project are developed using DTL and all except the landing page (a
 
 ## Lighthouse scores from Heroku deployed app via Chrome dev tools 
 ![lighthouse](readme.docs/images/lighthouse_desktop.png)
-![lighthouse](readme.docs/images/lighthouse_mobile.png.png)
+![lighthouse](readme.docs/images/lighthouse_mobile.png)
+
 We were delighted that our recent Lighthouse audit yielded excellent performance scores for the desktop version of our application. This achievement reflects the hard work and dedication of our development team in optimizing the user experience for desktop users. However, we also noted that the mobile performance scores were not up to our expectations. Recognizing the importance of a seamless mobile experience, we have prioritized addressing these issues in the upcoming sprint. Our team is committed to enhancing mobile performance to ensure that all users, regardless of their device, enjoy a fast and responsive application.
 
 
