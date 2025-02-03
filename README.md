@@ -1,11 +1,11 @@
 # Gifting Genie - A Gift Giving Alert System
 Created by: Phillip Kershaw, Christopher Matthew, Geraldine Edwards and Joanna O'Connor. 
 
-<img width="612" alt="responsive screens landing page for the Gifting Genie app" src="readme.docs/...">
+<img width="612" alt="responsive screens landing page for the Gifting Genie app" src="readme.docs/images/responsive_design_landing_page.png">
 
 
 link to Heroku (live page)
-> [View live project here]()
+> [View live project here](https://gift-genie-bb00e28764e5.herokuapp.com/)
 
 Github link 
 > [view Github repo here](https://github.com/Philgck/gifting-genie-two)
@@ -82,7 +82,7 @@ Gifting-Genie is designed to simplify and enhance the experience of managing eve
 
 INTENDED AUDIENCE
 - Gifting-Genie caters to a diverse audience, including:
-- ndividuals: Anyone looking to manage their personal events, keep a list of gift ideas, and connect with friends to share and view wishlists and event details.
+- Individuals: Anyone looking to manage their personal events, keep a list of gift ideas, and connect with friends to share and view wishlists and event details.
 - Families and Friends: Groups of users who want to coordinate gift-giving and event planning within their social circles, ensuring everyone is on the same page for special occasions.
 - Event Planners: Professionals or enthusiasts who need a reliable tool to organize events, track important dates, and manage guest lists and gift registries.
 - Communities and Clubs: Social groups and organizations that want to maintain a shared calendar of events and coordinate gift exchanges among members.
@@ -216,7 +216,7 @@ The website features a consistent layout and styling across all pages, ensuring 
 
   ![Signup Page](readme.docs/images/signup_page_view.png)
   ![login-page](readme.docs/images/login_feature.png) 
-  ![sign-out-page](readme.docs/images/sign_out_confirm.png.png) 
+  ![sign-out-page](readme.docs/images/sign_out_confirm.png) 
 
   Users must be registered via the sign up page and/or login to navigate from the landing page to their user profile. The login page/sign up notice will pop up if the user is not logged in when the landing page is clicked. Incomplete fields will receive prompts. A signout confirmation is requested if a user selects to sign out. 
 
@@ -224,7 +224,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details open>
   <summary>User Profile Page</summary>
 
-  ![User Profile Page](readme.docs/images/user-profile_page_view.png)
+  ![User Profile Page](readme.docs/images/user_profile_page_view.png)
  
   </details>
   Authenticated users then access their calendar to add, view or edit events; add, view or modify wishlists, and view or modify their friends list from their own user profile. 
@@ -235,7 +235,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>Calendar of events</summary>
 
-  ![events-detail](readme.docs/images/events_detail_page_view.png)
+  ![events-detail](readme.docs/images/populated_planner_view.png)
 
   </details>
   The detailed view a calendar containing user added events.
@@ -246,7 +246,7 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>A populated wishlish example</summary>
 
-  ![comment](readme.docs/example_wishlist.png)
+  ![comment](readme.docs/images/my_wishlist_populated_view.png)
 
   </details>
   Each user-associated wishlist contains user-added items. Users can edit/delete items on their wishlist. 
@@ -258,38 +258,14 @@ The website features a consistent layout and styling across all pages, ensuring 
   <details>
   <summary>Example associated Friends List</summary>
 
-  ![comment](readme.docs/example_friends_list.png)
+  ![comment](readme.docs/images/basic_friends_list_for_user_1.png)
 
   </details>
   Each user-associated wishlist contains user-added items. Users can edit/delete items on their wishlist. 
   
 <br> -->
 
-**FRIENDS USER PROFILE VIEW**
-  <details>
-  <summary>A view of a friend's profile</summary>
-
-  ![comment](readme.docs/example_friend_profile.png)
-
-  </details>
-  Each user can view selected friends' profiles and view their events and wishlists.  
-  
-
-<br> -->
-
-  **CUSTOMISED ADMIN PANEL**
-  <details>
-  <summary>Admin Panel</summary>
-
-  ![comment](readme.docs/create_topic_view_django_admin.png)
-
-  </details>
-The admin panel, a feature of Django, was customized using Summernote to enhance the styling of the ~~topics. A filter panel function was added to distinguish between published and unpublished topic-blogs. Additionally, a 'category' selector was integrated into the 'create topic' view to ensure new topic-blogs are assigned to the appropriate topic-page.~~
-
-<br>
-
-
- ---
+---
 
 ## FUTURE FEATURES
 The following would be options to consider including in future versions of the website:
@@ -303,7 +279,7 @@ The following would be options to consider including in future versions of the w
 
 ## TECHNOLOGIES USED
 
-  ### Languages Used ######
+  ### Languages Used
 
 ![Python](https://img.shields.io/badge/Python-3.8-blue)
 ![asgiref](https://img.shields.io/badge/asgiref-3.8.1-blue)
@@ -336,7 +312,6 @@ The following would be options to consider including in future versions of the w
 ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-AI%20Assistant-blue)
 ![Perplexity](https://img.shields.io/badge/Perplexity-Tool-lightgrey)
 ![Wikipedia](https://img.shields.io/badge/Wikipedia-Resource-blue)
-![Wave](https://img.shields.io/badge/Wave-Accessibility%20Tool-brightgreen)
 ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-Icons-blue)
 ![W3C HTML Validator](https://img.shields.io/badge/W3C%20HTML%20Validator-Pass-brightgreen)
 ![W3C CSS Validator](https://img.shields.io/badge/W3C%20CSS%20Validator-Pass-brightgreen)
@@ -351,7 +326,6 @@ The following would be options to consider including in future versions of the w
 ![Heroku](https://img.shields.io/badge/Heroku-Hosting-purple)
 ![Diffchecker](https://img.shields.io/badge/Diffchecker-Tool-blue)
 ![Flexbox](https://img.shields.io/badge/Flexbox-CSS%20Layout-blue)
-![DALL·E](https://img.shields.io/badge/DALL·E-AI%20Image%20Generation-blue)
 ![Pixabay](https://img.shields.io/badge/Pixabay-Image%20Library-green)
 
  ---
@@ -430,12 +404,9 @@ Pages in this project are developed using DTL and all except the landing page (a
 [home page html validation](readme.docs/...)
 [A MODEL page html validation](readme.docs/...)
 
-HTML was checked and ~~had no errors or warnings to show as indicated above.~~
-~~The home (landing) page had some initial syntax errors which were identified and corrected and then commited the code and the validation was clear.~~
-
    ### CSS validation
 
-[CSS validation](readme.docs/css_validation.png)
+[CSS validation](readme.docs/...)
 
 [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS file. External CSS for Bootstrap, provided by [CDN](https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css) was not tested.
 
@@ -449,9 +420,11 @@ HTML was checked and ~~had no errors or warnings to show as indicated above.~~
 
 
 ## Lighthouse scores from Heroku deployed app via Chrome dev tools 
-![lighthouse](readme.docs/Lighthouse_testing-result.png)
+![lighthouse](readme.docs/images/lighthouse_desktop.png)
+![lighthouse](readme.docs/images/lighthouse_mobile.png.png)
+We were delighted that our recent Lighthouse audit yielded excellent performance scores for the desktop version of our application. This achievement reflects the hard work and dedication of our development team in optimizing the user experience for desktop users. However, we also noted that the mobile performance scores were not up to our expectations. Recognizing the importance of a seamless mobile experience, we have prioritized addressing these issues in the upcoming sprint. Our team is committed to enhancing mobile performance to ensure that all users, regardless of their device, enjoy a fast and responsive application.
 
-The performance score is acceptible.
+
 
 <br>
 
