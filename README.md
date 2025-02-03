@@ -451,9 +451,7 @@ HTML was checked and ~~had no errors or warnings to show as indicated above.~~
 ## Lighthouse scores from Heroku deployed app via Chrome dev tools 
 ![lighthouse](readme.docs/Lighthouse_testing-result.png)
 
-The performance score is ~~acceptable.~~
- - Accesibility ~~88% (close to the 90% breakpoint!) was due to an insufficent contrast ratio of the heading text in the masthead image (which can be improved in future sprint) although it passed 10 audits.~~
-  - Performance ~~89% (close to the 90% breakpoint!) was due to the size of some images (which can be reduced in future sprints). 18 audits passed.~~
+The performance score is acceptible.
 
 <br>
 
