@@ -31,39 +31,18 @@ def confirm_friendship(request, user_id, friendship_id):
     if request.method == 'POST':
         friendship.confirmed = True
         friendship.save()
-        return redirect('friendslist:friendslist', user_id=user.id)
-    return render(request, 'friendslist/confirm_friendship.html', {'friendship': friendship, 'user': user})
-# @login_required
-# def friendship_list(request):
-#     if request.user.is_authenticated:
-#         friendships = Friendship.objects.filter(
-#             user=request.user, confirmed=True
-#             )
-#         return render(
-#             request,
-#             'friendslist/friendslist.html',
-#             {'friendships': friendships}
-#             )
-#     else:
-#         return redirect('account_login')
+        return HttpResponseRedirect(reverse('friendslist'))
 
 
-# class FriendshipListView(ListView):
-#     model = Friendship
-#     template_name = 'friendslist/friendslist.html'
-#     context_object_name = 'friendships'
-
-#     def get_queryset(self):
-#         return Friendship.objects.filter(
-#             user=self.request.user, confirmed=True
-#             )
-
-
-# def confirm_friendship(request, friendship_id):
-#     friendship = get_object_or_404(
-#         Friendship, id=friendship_id, friend=request.user
-#         )
-#     if request.method == 'POST':
-#         friendship.confirmed = True
-#         friendship.save()
-#         return HttpResponseRedirect(reverse('friendslist'))
+@login_required
+def add_friend(request):
+    if request.method == 'POST':
+        form = AddFriendForm(request.POST, user=request.user)
+        if form.is_valid():
+            friend_username = form.cleaned_data['friend_username']
+            friend = User.objects.get(username=friend_username)
+            Friendship.objects.create(user=request.user, friend=friend)
+            return redirect('friendslist')
+    else:
+        form = AddFriendForm(user=request.user)
+    return render(request, 'friendslist/add_friend.html', {'form': form})

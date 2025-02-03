@@ -171,7 +171,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="{% static 'js/theme.js' %}"></script>
-    <script src="{% static 'js/script' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    {% block extra_body %}
+    <!-- extra body content goes here -->
+    {% endblock extra_body %}
 </body>
 
 </html>

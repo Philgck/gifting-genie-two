@@ -1,7 +1,7 @@
 // filepath: /c:/Users/Pgcke/Documents/visual studio projects/gifting-genie-two/static/js/friendsearch.js
 $(document).ready(function() {
     $('#search-button').on('click', function() {
-        var query = $('#id_friend_username').val();
+        var query = $('#search_query').val();
         if (query.length > 2) {
             $.ajax({
                 url: searchUsernamesUrl,
@@ -14,6 +14,9 @@ $(document).ready(function() {
                         return '<option value="' + username + '">';
                     });
                     $('#username-suggestions').html(suggestions.join(''));
+                    if (data.length > 0) {
+                        $('#id_friend_username').val(data[0]);
+                    }
                 }
             });
         }

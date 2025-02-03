@@ -4,8 +4,9 @@ from . import views
 app_name = 'planner'
 
 urlpatterns = [
-    path('', views.planner_home, name='planner_home'),
-    path('create/', views.create_plan, name='create_plan'),
-    path('edit/<int:plan_id>/', views.edit_plan, name='edit_plan'),
-    path('delete/<int:plan_id>/', views.delete_plan, name='delete_plan'),
+    path('', views.planner_view, name='planner_view'),
+    path('add/', views.add_event, name='add_event'),
+    path('edit/<int:event_id>/', views.edit_event, name='edit_event'),
+    path('delete/<int:event_id>/', views.delete_event, name='delete_event'),
+    path('events/', views.get_events, name='get_events'),  # Add this line
 ]

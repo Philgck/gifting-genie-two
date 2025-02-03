@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2>Add Event</h2>
+   
+    <form method="post" id="planner-form" class="d-flex flex-column">
+        {% csrf_token %}
+        <div class="d-flex mb-3">
+            {{ form.event_name|as_crispy_field }}
+            {{ form.description|as_crispy_field }}
+        </div>
+        <div class="d-flex mb-3 align-items-end">
+            {{ form.event_date|as_crispy_field }}
+            {{ form.event_time|as_crispy_field }}
+            <button type="submit" class="btn btn-primary ml-2 no-margin">Add Event</button>
+        </div>
+    </form>
+    
+</div>
+<a href="{% url 'planner:planner_view' %}" class="btn btn-secondary mt-3">Back to Planner</a>
+{% endblock %}

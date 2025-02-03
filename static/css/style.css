@@ -6,6 +6,7 @@
 :root,
 [data-theme="light"] {
     --bs-blue: #3a8fd9;
+    --bs-baby-blue: #89cff0;
     --bs-indigo: #6610f2;
     --bs-purple: #686dc3;
     --bs-pink: #e83283;
@@ -25,6 +26,7 @@
 /* Dark Mode */
 [data-theme="dark"] {
     --bs-blue: #1e3a5f;
+    --bs-baby-blue: #4a7c9f;
     --bs-indigo: #3e1a8a;
     --bs-purple: #3e3a6d;
     --bs-pink: #8a1a4a;
@@ -43,6 +45,26 @@
 }
 
 /* fonts */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6,
+[data-theme="light"] p {
+    color: var(--bs-black);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p {
+    color: var(--bs-white);
+}
+
 
 
 /* global */
@@ -112,7 +134,7 @@ nav {
     align-items: center;
 }
 
-.brand {
+h1.brand {
     font-family: "Pacifico", serif;
     font-size: 2rem;
     font-weight: 400;

@@ -26,15 +26,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),  
     path('accounts/', include('allauth.urls')),
-    path('myaccount/<int:user_id>/', include([
-        path('', profile_view, name='myaccount_home'),
-        path('wishlist/', include('wishlist.urls', namespace='wishlist')),
-        path('friends/', include('friendslist.urls', namespace='friendslist')),
-        path('planner/', include('planner.urls', namespace='planner')),
-    ])),
-    # path('friends/', include('friendslist.urls')),
-    # path('myaccount/', include('myaccount.urls')),
-    # path('wishlist/', include('wishlist.urls')),
+    path('friends/', include('friendslist.urls')),
+    path('myaccount/', include('myaccount.urls')),
+    path('wishlist/', include('wishlist.urls')),
+    path('planner/', include('planner.urls', namespace='planner')),
 ]
 
 if settings.DEBUG:

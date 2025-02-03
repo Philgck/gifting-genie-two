@@ -30,7 +30,7 @@
     content: "";
     width: 440px;
     height: 440px;
-    background-color: #89cff0;
+    background-color: var(--bs-baby-blue);
     position: absolute;
     z-index: -1;
     top: 50%;

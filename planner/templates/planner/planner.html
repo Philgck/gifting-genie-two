@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Planner</h1>
+    <div id="calendar"></div>
+    <a href="{% url 'planner:add_event' %}" class="btn btn-primary mb-3">Add Event</a>
+
+    <div style="width: 100%; height: auto; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+        <ul class="list-group">
+            {% for event in events %}
+            <li class="list-group-item">
+                <h5>{{ event.event_name }}</h5>
+                <p>{{ event.description }}</p>
+                <p>{{ event.event_date }} - {{ event.event_time}}</p>
+                <div class="mt-2">
+                    <a href="{% url 'planner:edit_event' event.id %}" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="{% url 'planner:delete_event' event.id %}" class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

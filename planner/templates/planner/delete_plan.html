@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>Delete Event</h1>
+    
+    <p>Are you sure you want to delete "{{ event.event_name }}"" on {{ event.event_date }}?</p>
+    <form method="post" action="{% url 'planner:delete_event' event.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+    </form>
+    <a href="{% url 'planner:planner_view' %}" class="btn btn-secondary mt-3">Back to Planner</a>
+{% endblock %}
